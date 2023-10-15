@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            border: 2px solid #00f;
+            padding: 20px;
+            background-color: #e6e6ff;
+            display: inline-block;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .feedback {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        #results {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form id="quiz-form">
+        <ol id="questions-list">
+            <li>
+                <p style="text-align: left;">Question 1: What is 2 + 2?</p>
+                <label style="text-align: left;"><input type="radio" name="q1" value="a"> a) 3</label>
+                <label style="text-align: left;"><input type="radio" name="q1" value="b"> b) 4</label>
+                <label style="text-align: left;"><input type="radio" name="q1" value="c"> c) 5</label>
+                <label style="text-align: left;"><input type="radio" name="q1" value="d"> d) 6</label>
+                <p class="feedback"></p>
+            </li>
+            <li>
+                <p style="text-align: left;">Question 2: What is the capital of France?</p>
+                <label style="text-align: left;"><input type="radio" name="q2" value="a"> a) London</label>
+                <label style="text-align: left;"><input type="radio" name="q2" value="b"> b) Berlin</label>
+                <label style="text-align: left;"><input type="radio" name="q2" value="c"> c) Madrid</label>
+                <label style="text-align: left;"><input type="radio" name="q2" value="d"> d) Paris</label>
+                <p class="feedback"></p>
+            </li>
+           <li>
+		  <p style="text-align: left;">Question 3: Which planet is known as the Red Planet?</p>
+		  <label style="text-align: left;"><input type="radio" name="q3" value="a"> a) Venus</label>
+		  <label style="text-align: left;"><input type="radio" name="q3" value="b"> b) Mars</label>
+                <label style="text-align: left;"><input type="radio" name="q3" value="c"> c) Jupiter</label>
+		  <label style="text-align: left;"><input type="radio" name="q3" value="d"> d) Earth</label>
+		  <p class="feedback"></p>
+	    </li>
+
+            <li>
+                <p style="text-align: left;">Question 4: Which gas do plants absorb from the atmosphere?</p>
+                <label style="text-align: left;"><input type="radio" name="q4" value="a"> a) Oxygen</label>
+                <label style="text-align: left;"><input type="radio" name="q4" value="b"> b) Nitrogen</label>
+                <label style="text-align: left;"><input type="radio" name="q4" value="c"> c) Carbon Dioxide</label>
+                <label style="text-align: left;"><input type="radio" name="q4" value="d"> d) Hydrogen</label>
+                <p class="feedback"></p>
+            </li>
+            <li>
+                <p style="text-align: left;">Question 5: What is the largest mammal on Earth?</p>
+                <label style="text-align: left;"><input type="radio" name="q5" value="a"> a) Elephant</label>
+                <label style="text-align: left;"><input type="radio" name="q5" value="b"> b) Blue Whale</label>
+                <label style="text-align: left;"><input type="radio" name="q5" value="c"> c) Giraffe</label>
+                <label style="text-align: left;"><input type="radio" name="q5" value="d"> d) Lion</label>
+                <p class="feedback"></p>
+            </li>
+            <li>
+                <p style="text-align: left;">Question 6: Which country is known as the Land of the Rising Sun?</p>
+                <label style="text-align: left;"><input type="radio" name="q6" value="a"> a) China</label>
+                <label style="text-align: left;"><input type="radio" name="q6" value="b"> b) South Korea</label>
+                <label style="text-align: left;"><input type="radio" name="q6" value="c"> c) Japan</label>
+                <label style="text-align: left;"><input type="radio" name="q6" value="d"> d) India</label>
+                <p class="feedback"></p>
+            </li>
+            <li>
+                <p style="text-align: left;">Question 7: What is the chemical symbol for gold?</p>
+                <label style="text-align: left;"><input type="radio" name="q7" value="a"> a) Au</label>
+                <label style="text-align: left;"><input type="radio" name="q7" value="b"> b) Ag</label>
+                <label style="text-align: left;"><input type="radio" name="q7" value="c"> c) Fe</label>
+                <label style="text-align: left;"><input type="radio" name="q7" value="d"> d) Hg</label>
+                <p class="feedback"></p>
+            </li>
+           <li>
+		   <p style="text-align: left;">Question 8: What is the largest organ in the human body?</p>
+		   <label style="text-align: left;"><input type="radio" name="q8" value="a"> a) Heart</label>
+		   <label style="text-align: left;"><input type="radio" name="q8" value="b"> b) Lungs</label>
+		   <label style="text-align: left;"><input type="radio" name="q8" value="c"> c) Liver</label>
+		   <label style="text-align: left;"><input type="radio" name="q8" value="d"> d) Skin</label>
+		   <p class="feedback"></p>
+	    </li>
+
+            <li>
+                <p style="text-align: left;">Question 9: Who wrote the play "Romeo and Juliet"?</p>
+                <label style="text-align: left;"><input type="radio" name="q9" value="a"> a) Charles Dickens</label>
+                <label style="text-align: left;"><input type="radio" name="q9" value="b"> b) William Shakespeare</label>
+                <label style="text-align: left;"><input type="radio" name="q9" value="c"> c) Jane Austen</label>
+                <label style="text-align: left;"><input type="radio" name="q9" value="d"> d) Leo Tolstoy</label>
+                <p class="feedback"></p>
+            </li>
+            <li>
+                <p style="text-align: left;">Question 10: What is the chemical symbol for water?</p>
+                <label style="text-align: left;"><input type="radio" name="q10" value="a"> a) H2O</label>
+                <label style="text-align: left;"><input type="radio" name="q10" value="b"> b) CO2</label>
+                <label style="text-align: left;"><input type="radio" name="q10" value="c"> c) O2</label>
+                <label style="text-align: left;"><input type="radio" name="q10" value="d"> d) NaCl</label>
+                <p class="feedback"></p>
+            </li>
+        </ol>
+        <button type="button" id="submit-button">Submit Answers</button>
+        <p id="results"></p>
+    </form>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const submitButton = document.getElementById("submit-button");
+        const feedbackElements = document.querySelectorAll(".feedback");
+        const resultsElement = document.getElementById("results");
+
+        submitButton.addEventListener("click", function () {
+            let score = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                const feedback = feedbackElements[i - 1];
+
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    const correctAnswer = getCorrectAnswer(i);
+
+                    if (userAnswer === correctAnswer) {
+                        feedback.textContent = "Correct!";
+                        feedback.style.color = "green";
+                        score++;
+                    } else {
+                        feedback.textContent = `Incorrect. The correct answer is ${correctAnswer}`;
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.textContent = "No answer selected.";
+                    feedback.style.color = "red";
+                }
+            }
+
+            resultsElement.textContent = `Your score: ${score} out of 10`;
+        });
+
+        function getCorrectAnswer(questionNumber) {
+           
+            switch (questionNumber) {
+                case 1:
+                    return "b";
+                case 2:
+                    return "d";
+                case 3:
+                    return "b";
+                case 4:
+                    return "c";
+                case 5:
+                    return "b";
+                case 6:
+                    return "c";
+                case 7:
+                    return "a";
+                case 8:
+                    return "d";
+                case 9:
+                    return "b";
+                case 10:
+                    return "a";
+                default:
+                    return "N/A";
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
